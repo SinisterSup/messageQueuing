@@ -1,0 +1,23 @@
+[
+  {
+    "user_id": "u2019",
+    "name": "Captain America",
+    "mobile": "1234567890",
+    "latitude": 12.9715987,
+    "longitude": 77.5945627
+  },
+  {
+    "user_id": "u2316",
+    "name": "Iron Man",
+    "mobile": "0987654321",
+    "latitude": 12.2958104,
+    "longitude": 76.6393805
+  },
+  {
+    "user_id": "u12345",
+    "name": "Ant man",
+    "mobile": "0987654321",
+    "latitude": 12.29589104,
+    "longitude": 76.66293805
+  }
+]
