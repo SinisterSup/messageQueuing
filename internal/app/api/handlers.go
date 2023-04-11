@@ -2,6 +2,7 @@ package api
 
 import (
 	"context"
+	// "fmt"
 	"net/http"
 	"time"
 
@@ -9,10 +10,10 @@ import (
 	"github.com/SinisterSup/messageQueuing/internal/models"
 	"github.com/SinisterSup/messageQueuing/internal/rabbitmq"
 	"github.com/gin-gonic/gin"
+	amqp "github.com/rabbitmq/amqp091-go"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
-	amqp "github.com/rabbitmq/amqp091-go"
 )
 
 type InputAPI struct {
@@ -54,7 +55,7 @@ func CreateProduct(c *gin.Context) {
 	userCollection := db.GetCollection(client, "UserProduct-Messaging", "Users")
 	_, err = userCollection.InsertOne(context.Background(), bson.M{"_id": input.UserID, "created_at": time.Now()})
 	if err != nil {
-		c.IndentedJSON(http.StatusInternalServerError, gin.H{"error": "Failed to create the user"})
+		c.IndentedJSON(http.StatusInternalServerError, gin.H{"error": "Failed to create the user: user already exists or invalid user ID"})
 		return
 	}
 
