@@ -20,11 +20,12 @@ For detailed information on each directory, refer to their respective `README.md
 ## How to Get Started?
 
 1. Ensure that you have [Go](https://golang.org/doc/install) installed on your system.
-2. Clone the repository: `git clone https://github.com/SinisterSup/messageQueuing.git`
-3. Navigate to the project root directory: `cd messageQueuing`
-4. Install the dependencies: `go mod download`
-5. Create a `config.yaml` file in the root directory with the necessary configuration for MongoDB and RabbitMQ. You can use the `config.example.yaml` file as a reference.
-6. Start the `producer` and `consumer` applications by following the instructions in the `cmd` directory's `README.md` file.
-7. Optionally, you can run the `addUser` utility to add or update user data from a JSON file by following the instructions in the `cmd` directory's `README.md` file.
+2. Also make sure to have MongoDB and RabbitMQ running on your machine.(You can make use of docker containers to run locally on your machine)
+3. Clone the repository: `git clone https://github.com/SinisterSup/messageQueuing.git`
+4. Navigate to the project root directory: `cd messageQueuing`
+5. Install the dependencies: `go mod download`
+6. Create a `config.yaml` file in the root directory with the necessary configuration for MongoDB and RabbitMQ. You can use the `config.example.yaml` file as a reference.
+7. Start the `producer` and `consumer` applications by following the instructions in the `cmd` directory's `README.md` file.
+8. Optionally, you can run the `addUser` utility to add or update user data from a JSON file by following the instructions in the `cmd` directory's `README.md` file.
 
 ---
