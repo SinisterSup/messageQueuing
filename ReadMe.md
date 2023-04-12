@@ -20,7 +20,7 @@ For detailed information on each directory, refer to their respective `README.md
 ## How to Get Started?
 
 1. Ensure that you have [Go](https://golang.org/doc/install) installed on your system.
-2. Also make sure to have MongoDB and RabbitMQ running on your machine.(You can make use of docker containers to run locally on your machine)
+2. Also make sure to have MongoDB and RabbitMQ running on your machine.(You can make use of docker containers to run them locally)
 3. Clone the repository: `git clone https://github.com/SinisterSup/messageQueuing.git`
 4. Navigate to the project root directory: `cd messageQueuing`
 5. Install the dependencies: `go mod download`
